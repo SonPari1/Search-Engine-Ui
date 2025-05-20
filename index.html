@@ -19,15 +19,20 @@
     <title>Search Engine Ui</title>
   </head>
   <body
-    class="h-dvh w-dvw bg-white text-neutral-800 font-afacad flex flex-col justify-center items-center gap-12 px-9 py-9 text-base relative"
+    class="h-dvh w-dvw bg-white text-neutral-800 font-afacad flex flex-col justify-between sm:justify-center items-center sm:items-center gap-0 px-6 pt-5 pb-12 sm:gap-12 sm:px-9 sm:py-9 text-base relative"
   >
     <!-- Temperature -->
     <div
       id="temperature"
-      class="w-full h-fit flex flex-col items-end justify-center absolute top-0 px-9 py-9"
+      class="w-full h-fit flex flex-col items-end justify-center sm:absolute top-0 sm:px-9 sm:py-9"
     >
-      <div id="temperature-degree" class="text-3xl font-bold">36°</div>
-      <div id="temperature-location" class="text-lg font-semibold text-primary">
+      <div id="temperature-degree" class="text-2xl sm:text-3xl font-bold">
+        36°
+      </div>
+      <div
+        id="temperature-location"
+        class="text-base sm:text-lg font-semibold text-primary"
+      >
         Ahmedabad
       </div>
     </div>
@@ -37,12 +42,15 @@
       id="display"
       class="h-fit w-full flex flex-col justify-center items-center gap-2 text-center"
     >
-      <div id="display-Time" class="w-full h-fit text-6xl font-bold">
+      <div
+        id="display-Time"
+        class="w-full h-fit text-5xl sm:text-6xl font-bold"
+      >
         09:11:01
       </div>
       <div
         id="display-Greetings"
-        class="w-full h-fit text-3xl font-bold text-primary"
+        class="w-full h-fit text-2xl sm:text-3xl font-bold text-primary"
       >
         Good Morning, Saad.
       </div>
@@ -51,12 +59,12 @@
     <!-- Search & Bookmark -->
     <div
       id="search"
-      class="h-fit w-[536px] flex flex-col justify-center items-center gap-12"
+      class="h-fit w-[95%] sm:w-[536px] flex flex-col justify-center items-center gap-6 sm:gap-12"
     >
       <!-- Search Bar -->
       <div
         id="search-bar"
-        class="group h-fit w-[536px] px-6 py-4 rounded-2xl flex items-center gap-2 bg-[#FAFAFA] border border-[#EEEEEE] text-base font-poppins"
+        class="group h-fit w-full px-6 py-4 rounded-2xl flex items-center gap-2 bg-[#FAFAFA] border border-[#EEEEEE] text-base font-poppins"
       >
         <i
           class="hgi hgi-stroke hgi-search-01 text-2xl text-[#BDBDBD] transition-colors duration-200 group-hover:text-neutral-600 group-focus-within:text-neutral-600"
@@ -78,7 +86,7 @@
         <div>
           <a
             href=""
-            class="h-14 w-14 bg-[#FAFAFA] rounded-2xl flex justify-center items-center border border-[#EEEEEE] text-2xl text-[#BDBDBD]"
+            class="h-12 sm:h-14 w-12 sm:w-14 bg-[#FAFAFA] rounded-2xl flex justify-center items-center border border-[#EEEEEE] text-2xl text-[#BDBDBD] p-2.5 sm:p-4"
           >
             <i class="hgi hgi-stroke hgi-plus-sign"></i>
           </a>
