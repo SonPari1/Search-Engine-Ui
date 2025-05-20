@@ -197,6 +197,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
@@ -208,6 +211,9 @@
   }
   .left-9 {
     left: calc(var(--spacing) * 9);
+  }
+  .block {
+    display: block;
   }
   .flex {
     display: flex;

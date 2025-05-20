@@ -27,13 +27,13 @@
       class="w-full h-fit flex flex-col items-end justify-center sm:absolute top-0 sm:px-9 sm:py-9"
     >
       <div id="temperature-degree" class="text-2xl sm:text-3xl font-bold">
-        36°
+        Loading...
       </div>
       <div
         id="temperature-location"
         class="text-base sm:text-lg font-semibold text-primary"
       >
-        Ahmedabad
+        Detecting...
       </div>
     </div>
 
@@ -45,15 +45,11 @@
       <div
         id="display-Time"
         class="w-full h-fit text-5xl sm:text-6xl font-bold"
-      >
-        09:11:01
-      </div>
+      ></div>
       <div
-        id="display-Greetings"
+        id="display-Quotes"
         class="w-full h-fit text-2xl sm:text-3xl font-bold text-primary"
-      >
-        Good Morning, Saad.
-      </div>
+      ></div>
     </div>
 
     <!-- Search & Bookmark -->
@@ -62,7 +58,7 @@
       class="h-fit w-[95%] sm:w-[536px] flex flex-col justify-center items-center gap-6 sm:gap-12"
     >
       <!-- Search Bar -->
-      <div
+      <form
         id="search-bar"
         class="group h-fit w-full px-6 py-4 rounded-2xl flex items-center gap-2 bg-[#FAFAFA] border border-[#EEEEEE] text-base font-poppins"
       >
@@ -75,7 +71,7 @@
           id="searchInput"
           class="placeholder:text-[#9E9E9E] outline-none grow text-neutral-600 bg-transparent"
         />
-      </div>
+      </form>
 
       <!-- Bookmarks -->
 
