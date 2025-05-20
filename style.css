@@ -1,0 +1,15 @@
+* {
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+
+#search-bar:focus-within,
+#search-bar:hover,
+#search-bar:active {
+  border: 1px solid #525252;
+}
+
+
+#bookmark::-webkit-scrollbar {
+  display: none;
+}

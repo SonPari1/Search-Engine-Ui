@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link href="src/input.css" rel="stylesheet" />
+    <link href="src/output.css" rel="stylesheet" />
+
+    <!-- Icon CDN -->
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Search Engine Ui</title>
+  </head>
+  <body
+    class="h-dvh w-dvw bg-white text-neutral-800 font-afacad flex flex-col justify-center items-center gap-12 px-9 py-9 text-base relative"
+  >
+    <!-- Temperature -->
+    <div
+      id="temperature"
+      class="w-full h-fit flex flex-col items-end justify-center absolute top-0 px-9 py-9"
+    >
+      <div id="temperature-degree" class="text-3xl font-bold">36°</div>
+      <div id="temperature-location" class="text-lg font-semibold text-primary">
+        Ahmedabad
+      </div>
+    </div>
+
+    <!-- Clock -->
+    <div
+      id="display"
+      class="h-fit w-full flex flex-col justify-center items-center gap-2 text-center"
+    >
+      <div id="display-Time" class="w-full h-fit text-6xl font-bold">
+        09:11:01
+      </div>
+      <div
+        id="display-Greetings"
+        class="w-full h-fit text-3xl font-bold text-primary"
+      >
+        Good Morning, Saad.
+      </div>
+    </div>
+
+    <!-- Search & Bookmark -->
+    <div
+      id="search"
+      class="h-fit w-[536px] flex flex-col justify-center items-center gap-12"
+    >
+      <!-- Search Bar -->
+      <div
+        id="search-bar"
+        class="group h-fit w-[536px] px-6 py-4 rounded-2xl flex items-center gap-2 bg-[#FAFAFA] border border-[#EEEEEE] text-base font-poppins"
+      >
+        <i
+          class="hgi hgi-stroke hgi-search-01 text-2xl text-[#BDBDBD] transition-colors duration-200 group-hover:text-neutral-600 group-focus-within:text-neutral-600"
+        ></i>
+        <input
+          type="text"
+          placeholder="Search or type a URL"
+          id="searchInput"
+          class="placeholder:text-[#9E9E9E] outline-none grow text-neutral-600 bg-transparent"
+        />
+      </div>
+
+      <!-- Bookmarks -->
+
+      <div
+        id="bookmark"
+        class="w-full h-fit flex flex-row justify-start items-center gap-6 overflow-auto"
+      >
+        <div>
+          <a
+            href=""
+            class="h-14 w-14 bg-[#FAFAFA] rounded-2xl flex justify-center items-center border border-[#EEEEEE] text-2xl text-[#BDBDBD]"
+          >
+            <i class="hgi hgi-stroke hgi-plus-sign"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+  </body>
+</html>
