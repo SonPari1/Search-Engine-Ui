@@ -106,6 +106,7 @@ quoteElement.textContent = getRandomQuotes();
 // Search Functionality
 const searchForm = document.getElementById("search-bar");
 const searchInput = document.getElementById("searchInput");
+const dialogWrapper = document.getElementById("dialog-Wrapper");
 searchForm.addEventListener("submit", function (event) {
   event.preventDefault();
   const query = searchInput.value.trim();
@@ -127,3 +128,65 @@ searchForm.addEventListener("submit", function (event) {
   }
   searchInput.value = "";
 });
+
+// Bookmark Functionality
+const dialog = document.getElementById("bookmark-Form");
+function openBookmarkForm() {
+  dialog.showModal();
+}
+function closeBookmarkForm() {
+  dialog.close();
+}
+
+dialog.addEventListener("click", (e) => {
+  if (!dialogWrapper.contains(e.target)) {
+    closeBookmarkForm();
+  }
+});
+
+// Save bookmark (URL only)
+const form = document.getElementById("bookmark-submitForm");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let url = document.getElementById("bookmark-Name").value.trim();
+
+  if (!url.startsWith("http://") && !url.startsWith("https://")) {
+    url = "https://" + url;
+  }
+
+  const bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+  bookmarks.push(url);
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+
+  form.reset();
+  closeBookmarkForm();
+  renderBookmarks();
+});
+
+function renderBookmarks() {
+  const bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+  const bookmarkList = document.getElementById("bookmark-List");
+  bookmarkList.innerHTML = ""; // Clear existing
+
+  bookmarks.forEach((url) => {
+    const faviconUrl = "https://www.google.com/s2/favicons?domain=" + url;
+
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.target = "_blank";
+    anchor.className =
+      "h-12 sm:h-14 w-12 sm:w-14 bg-[#FAFAFA] rounded-2xl flex justify-center items-center border border-[#EEEEEE] p-2.5 sm:p-4";
+
+    const img = document.createElement("img");
+    img.src = faviconUrl;
+    img.alt = "Favicon";
+    img.className = "w-full h-full object-contain";
+
+    anchor.appendChild(img);
+    bookmarkList.appendChild(anchor);
+  });
+}
+
+// Initial render on page load
+renderBookmarks();

@@ -77,18 +77,61 @@
 
       <div
         id="bookmark"
-        class="w-full h-fit flex flex-row justify-start items-center gap-6 overflow-auto"
+        class="w-full h-fit flex flex-row justify-start items-center gap-4 sm:gap-6 overflow-auto"
       >
+        <div id="bookmark-List" class="flex gap-4 sm:gap-6"></div>
         <div>
-          <a
-            href=""
+          <button
+            id="add-Bookmark"
+            onclick="openBookmarkForm()"
             class="h-12 sm:h-14 w-12 sm:w-14 bg-[#FAFAFA] rounded-2xl flex justify-center items-center border border-[#EEEEEE] text-2xl text-[#BDBDBD] p-2.5 sm:p-4"
           >
             <i class="hgi hgi-stroke hgi-plus-sign"></i>
-          </a>
+          </button>
         </div>
       </div>
     </div>
+
+    <!-- Add Bookmark  -->
+    <dialog
+      id="bookmark-Form"
+      class="w-fit max-w-[90%] h-fit absolute transform translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] rounded-xl bg-white border border-[#EEEEEE]"
+    >
+      <div class="flex flex-col gap-8 p-6" id="dialog-Wrapper">
+        <div
+          id="heading"
+          class="w-full h-fit flex justify-between items-center"
+        >
+          <div class="text-xl font-semibold font-poppins text-neutral-800">
+            Add Bookmark
+          </div>
+          <button
+            type="button"
+            onclick="closeBookmarkForm()"
+            class="hgi hgi-stroke hgi-multiplication-sign text-xl font-semibold font-poppins text-neutral-400 cursor-pointer"
+          ></button>
+        </div>
+        <form
+          action=""
+          class="w-full h-fit flex flex-col gap-4"
+          id="bookmark-submitForm"
+        >
+          <input
+            type="text"
+            placeholder="example.com"
+            id="bookmark-Name"
+            class="h-fit w-[320px] px-5 py-3 rounded-2xl flex items-center gap-2 bg-[#FAFAFA] border border-[#EEEEEE] text-base font-poppins placeholder:text-[#9E9E9E] outline-none grow text-neutral-600 hover:border-[#525252] active:border-[#525252] focus:border-[#525252]"
+          />
+          <button
+            type="submit"
+            id="submit-Btn"
+            class="h-fit w-full py-2.5 rounded-2xl bg-primary text-white text-base font-poppins cursor-pointer"
+          >
+            Add Bookmark
+          </button>
+        </form>
+      </div>
+    </dialog>
 
     <!-- JavaScript File -->
     <script src="script.js"></script>
