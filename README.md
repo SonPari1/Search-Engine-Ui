@@ -1,6 +1,6 @@
 # Search Engine UI
 
-![Search Engine UI Cover](Assets/Image/Github%20Cover.jpg)
+![Search Engine UI Cover](Assets/Image/Cover.jpg)
 
 ## Overview
 
