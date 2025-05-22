@@ -170,7 +170,9 @@ function renderBookmarks() {
   bookmarkList.innerHTML = ""; // Clear existing
 
   bookmarks.forEach((url) => {
-    const faviconUrl = "https://www.google.com/s2/favicons?domain=" + url;
+    // const faviconUrl = "https://www.google.com/s2/favicons?domain=" + url;
+    const faviconUrl = "https://www.google.com/s2/favicons?sz=64&domain=" + url;
+
 
     const anchor = document.createElement("a");
     anchor.href = url;
